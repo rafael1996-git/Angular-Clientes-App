@@ -1,0 +1,16 @@
+
+
+<Button type="button " (click)="setHabilitar()" class="btn btn-success my-3">{{habilitar==true? 'Oculta': 'Mostrar'}}</Button>
+<div  class="card">
+    <div class="card-header">
+        Listado
+
+    </div>
+    <div class="list-group" *ngIf="habilitar">
+        <ul>
+            <li class="list-group-item" *ngFor="let itera of listado">{{itera}}</li>
+
+        </ul>
+
+    </div>
+</div>
